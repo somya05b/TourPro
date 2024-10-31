@@ -1,0 +1,188 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    background-color: #0066cc;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+header img {
+    height: 50px;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 2em;
+    color: #ffdd57;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #008cff;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #004a99;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007acc;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #ff704d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e55d2f;
+}
+
+/* Home Page */
+.home {
+    background-image: url('https://i.ibb.co/PW7vbsD/bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.home h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffdd57;
+}
+
+/* Login Section */
+.login-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Contact Page */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Tour Packages */
+.package-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: left;
+    background: #fff7e6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package-card h3 {
+    color: #ff704d;
+}
+
+/* Payment Section */
+.payment-details {
+    background: #e6f7ff;
+    padding: 15px;
+    border-radius: 10px;
+    color: #007acc;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .home h2 {
+        font-size: 2em;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .login-form,
+    .contact-form,
+    .package-card {
+        margin: 15px;
+    }
+}
